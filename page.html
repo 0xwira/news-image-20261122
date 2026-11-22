@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1024, initial-scale=1">
+<title>The World in One Day — Sunday 22 November 2026</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;width:1024px;height:1024px;background:#e7e0d2;color:#201e1a}
+  body{font-family:Georgia,"Times New Roman",serif}
+  .page{width:1024px;height:1024px;padding:21px 25px 16px;background:#f7f3e9;overflow:hidden;display:flex;flex-direction:column;gap:7px}
+  .sans{font-family:Arial,Helvetica,sans-serif}
+  .kicker{height:19px;flex:none;border-bottom:1px solid #292720;display:flex;align-items:flex-start;justify-content:space-between;font:700 10px/13px Arial,sans-serif;letter-spacing:1.55px}
+  .kicker .edition{color:#9c342c;letter-spacing:1.2px}
+  .mast{height:77px;flex:none;border-bottom:2px solid #24221e;padding-top:2px}
+  h1{font-weight:400;font-size:43px;line-height:48px;letter-spacing:-1.7px;margin:0}
+  .deck{margin:2px 0 0;font-size:13.4px;line-height:18px;font-style:italic;white-space:nowrap;letter-spacing:-.12px}
+  .timeline{height:47px;flex:none;border-bottom:1px solid #9f998d;padding:3px 0 5px}
+  .section-label{font:700 9px/11px Arial,sans-serif;letter-spacing:1.35px;color:#8e342d}
+  .times{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:4px}
+  .time{font:10px/12px Arial,sans-serif;white-space:nowrap;letter-spacing:-.15px}
+  .time b{font-weight:700;color:#9c342c}
+  .stats{height:59px;flex:none;display:grid;grid-template-columns:repeat(6,1fr);border-bottom:1px solid #8f897e;padding:2px 0 5px}
+  .stat{padding:0 8px;border-left:1px solid #c8c0b3;min-width:0}
+  .stat:first-child{border-left:0;padding-left:0}
+  .stat:last-child{padding-right:0}
+  .num{font-size:24px;line-height:26px;letter-spacing:-.9px;color:#9c342c}
+  .stat p{font:9.1px/11px Arial,sans-serif;margin:0;color:#38352f}
+  .regions{height:19px;flex:none;font:700 9.2px/16px Arial,sans-serif;letter-spacing:.48px;border-bottom:1px solid #b8b0a4;white-space:nowrap}
+  .regions span{color:#9c342c}
+  .leads{height:222px;flex:none;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .lead{height:222px;border:1px solid #b9b1a4;background:#fbf8f0;padding:8px 10px 7px;position:relative;display:flex;flex-direction:column;min-width:0}
+  .lead-head{height:14px;display:flex;justify-content:space-between;align-items:center;font:700 8.4px/11px Arial,sans-serif;letter-spacing:.52px;white-space:nowrap}
+  .tag{color:#615b51;overflow:hidden;text-overflow:ellipsis}
+  .pill{border:1px solid #aaa194;border-radius:9px;padding:1px 6px;font:700 7px/10px Arial,sans-serif;letter-spacing:.6px;color:#625c52;white-space:nowrap}
+  .pill.claim{border-color:#a33c31;color:#a33c31;background:#f5e8df}
+  .diagram{height:49px;flex:none;margin:4px 0 3px;overflow:hidden}
+  .lead h2{font-size:16.4px;line-height:18px;letter-spacing:-.35px;font-weight:700;margin:0 0 4px}
+  .body{font-size:9.15px;line-height:11px;margin:0;color:#38342d}
+  .source{font:700 8px/10px Arial,sans-serif;color:#8d342d;margin-top:auto;padding-top:4px;letter-spacing:.18px}
+  .tiles{height:274px;flex:none;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,1fr);gap:7px 8px}
+  .tile{border-top:1px solid #7e786d;border-bottom:1px solid #c7bfb1;background:#f9f6ee;padding:5px 7px 4px;min-width:0;overflow:hidden;position:relative}
+  .tile-top{height:12px;display:flex;align-items:center;justify-content:space-between;gap:3px;font:700 7.3px/10px Arial,sans-serif;letter-spacing:.48px;color:#625c52;white-space:nowrap}
+  .tile-top .tag{flex:1}
+  .tile-top .pill{font-size:6px;line-height:8px;padding:0 4px;letter-spacing:.35px}
+  .tile-number{height:18px;font:700 13px/17px Georgia,serif;letter-spacing:.05px;color:#9c342c;white-space:nowrap}
+  .tile h3{font-size:10.4px;line-height:11px;margin:0 0 2px;font-weight:700;letter-spacing:-.16px}
+  .tile p{font:7.9px/9px Arial,sans-serif;margin:0;color:#49453e}
+  .also{height:106px;flex:none;border-top:1px solid #292720;padding-top:4px}
+  .also h2{font:700 9px/12px Arial,sans-serif;letter-spacing:1.1px;margin:0 0 3px;color:#8f342d}
+  .also ol{margin:0;padding:0;list-style:none;counter-reset:also;display:grid;grid-auto-flow:column;grid-template-rows:repeat(8,11px);grid-template-columns:1fr 1fr;column-gap:22px}
+  .also li{counter-increment:also;font:8.15px/11px Arial,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:clip}
+  .also li:before{content:counter(also,decimal) ". ";font-weight:700;color:#9c342c}
+  .datecheck{height:38px;flex:none;border-top:1px solid #9d9589;border-bottom:1px solid #9d9589;padding:4px 1px;font:9px/13px Arial,sans-serif;color:#37332d}
+  .datecheck b{color:#9c342c;letter-spacing:.55px}
+  footer{height:57px;flex:none;padding-top:1px;font:8.1px/11px Arial,sans-serif;color:#4c473f}
+  footer p{margin:0}
+  footer strong{color:#292620;letter-spacing:.5px}
+  .future{margin-top:3px!important;font-weight:700;color:#8e342d}
+</style>
+</head>
+<body>
+<main class="page">
+  <div class="kicker"><span>THE WORLD IN ONE DAY · 36 STORIES · 7 REGIONS</span><span class="edition">GLOBAL EDITION / SUNDAY</span></div>
+  <header class="mast">
+    <h1>Sunday 22 November 2026</h1>
+    <p class="deck">186 drones over Ukraine in the night · COP31's deal names no fossil fuels · Iran's radar claim meets Bahrain's denial</p>
+  </header>
+  <section class="timeline" aria-label="The day, in UTC">
+    <div class="section-label">THE DAY, IN UTC</div>
+    <div class="times">
+      <div class="time"><b>01:00</b> HK polls open</div><div class="time"><b>03:00</b> COP31 objections close</div><div class="time"><b>05:11</b> Hamas seeks talks</div><div class="time"><b>05:30</b> Verstappen wins Vegas</div><div class="time"><b>06:00</b> COP31 approval due</div><div class="time"><b>07:30</b> Approval slips again</div>
+    </div>
+  </section>
+  <section class="stats" aria-label="Sunday's numbers">
+    <div class="stat"><div class="num">186</div><p>drones fired at Ukraine overnight</p></div>
+    <div class="stat"><div class="num">161</div><p>downed or suppressed by air defence</p></div>
+    <div class="stat"><div class="num">35%</div><p>electricity goal for 2035, kept</p></div>
+    <div class="stat"><div class="num">$120bn</div><p>adaptation target dropped</p></div>
+    <div class="stat"><div class="num">720/9</div><p>India's record Test total in NZ</p></div>
+    <div class="stat"><div class="num">50</div><p>Wembanyama points, 19 rebounds</p></div>
+  </section>
+  <div class="regions"><span>EUROPE 8</span> · <span>MIDDLE EAST 4</span> · <span>AMERICAS 7</span> · <span>ASIA-PACIFIC 9</span> · <span>AFRICA 3</span> · <span>OCEANIA 3</span> · <span>WORLD 2</span></div>
+  <section class="leads" aria-label="Lead stories">
+    <article class="lead">
+      <div class="lead-head"><span class="tag">KYIV REGION, UKRAINE · WAR</span><span class="pill">REPORTED</span></div>
+      <div class="diagram">
+        <svg viewBox="0 0 292 49" width="100%" height="49" role="img" aria-label="Drones approach a shield at night: 161 of 186">
+          <rect width="292" height="49" fill="#202c39"/><circle cx="260" cy="11" r="5" fill="#e8d8a9"/><path d="M0 41h292v8H0z" fill="#131a21"/>
+          <g fill="#e9e4d4"><path d="M24 12l6-3 6 3-6 2zM42 24l6-3 6 3-6 2zM70 11l6-3 6 3-6 2zM99 25l6-3 6 3-6 2zM122 13l6-3 6 3-6 2z"/><path d="M30 14v4m-3-2h6M48 26v4m-3-2h6M76 13v4m-3-2h6M105 27v4m-3-2h6M128 15v4m-3-2h6" stroke="#e9e4d4" stroke-width="1"/></g>
+          <path d="M184 12l16 6v10c0 9-7 14-16 18-9-4-16-9-16-18V18z" fill="#a33a31" stroke="#f1ddbd" stroke-width="1.5"/><path d="M177 29l5 5 10-12" fill="none" stroke="#fff1d7" stroke-width="2"/>
+          <text x="212" y="30" fill="#f7f1df" font-family="Arial,sans-serif" font-size="11" font-weight="700">161 OF 186</text><text x="212" y="38" fill="#c5c1b7" font-family="Arial,sans-serif" font-size="7">DOWNED /</text><text x="212" y="46" fill="#c5c1b7" font-family="Arial,sans-serif" font-size="7">SUPPRESSED</text>
+        </svg>
+      </div>
+      <h2>Russia fires 186 drones; a Kyiv-region block is destroyed</h2>
+      <p class="body">Air defences downed or suppressed 161 of 186 strike drones (72 of them jet-powered) fired from eight directions. One destroyed a five-storey block in Dymer: up to seven people feared trapped, two injured, nine evacuated.</p>
+      <div class="source">Ukrainian Air Force via Kyiv Post</div>
+    </article>
+    <article class="lead">
+      <div class="lead-head"><span class="tag">ANTALYA, TÜRKIYE · CLIMATE</span><span class="pill">REPORTED</span></div>
+      <div class="diagram">
+        <svg viewBox="0 0 292 49" width="100%" height="49" role="img" aria-label="November calendar and separate 1.5 degree thermometer">
+          <rect width="292" height="49" fill="#e9e2d4"/><rect x="24" y="4" width="72" height="42" rx="2" fill="#fbf8ef" stroke="#797264"/><path d="M24 15h72" stroke="#9d392f" stroke-width="5"/><text x="60" y="13" text-anchor="middle" fill="#fff8e9" font-family="Arial,sans-serif" font-size="7" font-weight="700" letter-spacing="1">NOVEMBER</text>
+          <g fill="#7d786d" font-family="Arial,sans-serif" font-size="6" text-anchor="middle"><text x="36" y="25">1</text><text x="49" y="25">2</text><text x="62" y="25">3</text><text x="75" y="25">4</text><text x="88" y="25">5</text><text x="36" y="35">8</text><text x="49" y="35">9</text><text x="62" y="35">10</text><text x="75" y="35">11</text><text x="88" y="35">12</text></g>
+          <path d="M196 11v23a7 7 0 1 0 9 0V11a4.5 4.5 0 0 0-9 0z" fill="#f8f3e8" stroke="#5d5a53" stroke-width="1.5"/><path d="M200.5 17v20" stroke="#a43b31" stroke-width="3"/><circle cx="200.5" cy="38" r="4" fill="#a43b31"/><text x="219" y="29" fill="#28251f" font-family="Georgia,serif" font-size="18">1.5°C</text><text x="219" y="37" fill="#746d61" font-family="Arial,sans-serif" font-size="7" letter-spacing=".5">OVERSHOOT</text><text x="219" y="45" fill="#746d61" font-family="Arial,sans-serif" font-size="7" letter-spacing=".5">ADMITTED</text>
+        </svg>
+      </div>
+      <h2>Climate deal lands with no mention of fossil fuels</h2>
+      <p class="body">The final text “recalls” the Dubai pact whole, keeps the 55%-electricity-by-2035 goal, drops the $120bn adaptation target and is the first to admit 1.5°C will be overshot. Hoekstra: “a good deal or no deal.”</p>
+      <div class="source">Reuters · BBC · The Guardian</div>
+    </article>
+    <article class="lead">
+      <div class="lead-head"><span class="tag">MANAMA, BAHRAIN · IRAN</span><span class="pill claim">CLAIM</span></div>
+      <div class="diagram">
+        <svg viewBox="0 0 292 49" width="100%" height="49" role="img" aria-label="Two radar dishes and a flame over a flat skyline">
+          <rect width="292" height="49" fill="#e8e1d4"/><path d="M0 40h292v9H0zM0 33h29v7H0zm36-5h30v12H36zm39 4h28v8H75zm39-10h38v18h-38zm48 6h27v12h-27zm39-7h32v19h-32zm42 6h29v13h-29z" fill="#bbb3a5"/>
+          <g stroke="#343b40" stroke-width="2" fill="none"><path d="M77 37l7-18m-10 18h20M84 20a10 10 0 0 1 17 1l-8 4zM191 37l-6-17m-4 17h20M185 19a10 10 0 0 0-17 2l8 4z"/></g>
+          <path d="M139 34c-7-8 4-11 1-18 9 6 10 11 7 16 5-3 5-6 5-9 7 8 3 15-5 17h-10c-5-1-5-5 2-6z" fill="#b44834"/><text x="228" y="19" fill="#a13a30" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1">2 RADARS?</text>
+        </svg>
+      </div>
+      <h2>Iran claims two US radars hit; Bahrain denies it</h2>
+      <p class="body">The IRGC says it destroyed two Patriot radars on Saturday night. Bahrain's foreign ministry answered on Sunday: the target was a civilian industrial site — a fire, no injuries — and a violation of its sovereignty.</p>
+      <div class="source">Khaleej Times · Al Jazeera</div>
+    </article>
+  </section>
+  <section class="tiles" aria-label="Twelve more stories">
+    <article class="tile"><div class="tile-top"><span class="tag">HONG KONG · ELECTION</span><span class="pill">REPORTED</span></div><div class="tile-number">856 CANDIDATES</div><h3>Hong Kong elects its Election Committee</h3><p>856 candidates, 723 seats, 5,700 voters; polls 09:00–18:00. · SCMP</p></article>
+    <article class="tile"><div class="tile-top"><span class="tag">WELLINGTON · CRICKET</span><span class="pill">OFFICIAL</span></div><div class="tile-number">720/9 DECLARED</div><h3>India declare on 720-9, a record in New Zealand</h3><p>Rahul 156, Pant 128, Gill 97*; hosts 119/2, trailing by 233. · ESPN</p></article>
+    <article class="tile"><div class="tile-top"><span class="tag">LAS VEGAS · FORMULA 1</span><span class="pill">OFFICIAL</span></div><div class="tile-number">VERSTAPPEN WINS</div><h3>Verstappen takes the Las Vegas Grand Prix</h3><p>From pole in 1:27.639.24; Norris +0.639, Piastri +1.529. · FIA</p></article>
+    <article class="tile"><div class="tile-top"><span class="tag">SAN ANTONIO · NBA</span><span class="pill">REPORTED</span></div><div class="tile-number">50 POINTS</div><h3>Wembanyama scores 50 as the Spurs roll on</h3><p>50 pts, 19 rebounds, 5 blocks; 114–91 over New Orleans. · Reuters</p></article>
+    <article class="tile"><div class="tile-top"><span class="tag">GULF OF FINLAND · SEA</span><span class="pill">REPORTED</span></div><div class="tile-number">SHIP ABLAZE</div><h3>Russian cargo ship Sparta II still burning</h3><p>Hit by drones Saturday; Finland leads Loviisa rescue. · Reuters</p></article>
+    <article class="tile"><div class="tile-top"><span class="tag">TEHRAN, IRAN · ENERGY</span><span class="pill">REPORTED</span></div><div class="tile-number">POWER CUTS</div><h3>Iran begins rationing electricity</h3><p>Rolling cuts up to two hours a day as war damage bites. · Wires</p></article>
+    <article class="tile"><div class="tile-top"><span class="tag">BRASÍLIA, BRAZIL · HEALTH</span><span class="pill">REPORTED</span></div><div class="tile-number">IN INTENSIVE CARE</div><h3>Bolsonaro in intensive care in Brasília</h3><p>Acute bowel obstruction, stable; surgery possible. · Reuters</p></article>
+    <article class="tile"><div class="tile-top"><span class="tag">WASHINGTON · CYBER</span><span class="pill">REPORTED</span></div><div class="tile-number">FBI PROBE</div><h3>FBI probes apparent hack of its crime database</h3><p>Washington State pauses gun-dealer checks; breach assessed. · AP</p></article>
+    <article class="tile"><div class="tile-top"><span class="tag">BRUSSELS · TRAVEL</span><span class="pill">OFFICIAL</span></div><div class="tile-number">FLIGHTS GROUNDED</div><h3>Belgian controllers join Monday's national strike</h3><p>Most flights grounded 07:00–21:00; controllers walk out. · Wires</p></article>
+    <article class="tile"><div class="tile-top"><span class="tag">MANIPUR, INDIA · POISONING</span><span class="pill">REPORTED</span></div><div class="tile-number">TOLL AT 19</div><h3>Toxic-liquor toll in Manipur climbs to 19</h3><p>600 in hospital, six held; toll up from 16 on Saturday. · Xinhua</p></article>
+    <article class="tile"><div class="tile-top"><span class="tag">CIKANDE, INDONESIA · FIRE</span><span class="pill">REPORTED</span></div><div class="tile-number">3 DEAD, 36 MISSING</div><h3>Candy-factory fire in Cikande: 3 dead, 36 missing</h3><p>Blaze tore through the Banten plant; search goes on. · Detiknews</p></article>
+    <article class="tile"><div class="tile-top"><span class="tag">JUNÍN, PERU · QUAKE TOLL</span><span class="pill">REPORTED</span></div><div class="tile-number">1 DEAD, 16 HURT</div><h3>Peru quake toll updated: 1 dead, 16 hurt</h3><p>170 homes damaged in Junín; the count is completed. · Reuters</p></article>
+  </section>
+  <section class="also">
+    <h2>ALSO ON SUNDAY 22 NOVEMBER 2026</h2>
+    <ol>
+      <li>Estonia to shut five Russia border crossings 1 Dec, after a sabotage bid (Reuters)</li>
+      <li>Denmark expels a Russian attaché over an alleged plot against a Ukrainian (Wires)</li>
+      <li>Nepal PM Shah lands in Delhi on first visit; meets Modi Monday (IANS)</li>
+      <li>Chinese bomber turns back 170 km from Manila (Wires)</li>
+      <li>Philippines M5.9 quake, 898 km deep, off Palawan (EMSC)</li>
+      <li>Japan poll: record 82% feel friendly to South Korea (JKN)</li>
+      <li>Taiwan live-fire drill on Kinmen (CNA)</li>
+      <li>Somalia expels UAE ambassador, recalls its envoy (Wires)</li>
+      <li>Sudan: RSF pauses killing civilians, incl. 3 children, in W. Kordofan (Claim)</li>
+      <li>Kenya discharges its last Ebola patient (Wires)</li>
+      <li>Melbourne: 70 years since the 1956 Olympics opened (ABC)</li>
+      <li>Cummins keeps Australia's Test captaincy (Reuters)</li>
+      <li>Trump seeks “permanent” Iran deal; Doha talks to mediators (Al Jazeera)</li>
+      <li>Nvidia faces SEC accounting probe, say reports (Reports)</li>
+      <li>Gold holds near $5,555 (Reuters); Bitcoin back above $60,000 after Saturday's $55.1k flush (Market data)</li>
+    </ol>
+  </section>
+  <div class="datecheck"><b>DATE CHECK —</b> Left out as other days' news: the 400-drone, 110-missile barrage (Thu–Fri 20–21 Nov) · “El Chapo Isidro” captured (Fri) · Gaza aid-van strike (Sat). Sunday's real count: 186 drones, at the top of this page.</div>
+  <footer>
+    <p><strong>HOW WE CHECKED —</strong> REPORTED = carried by the day's wires · CLAIM = one side's account, labelled as such · FORECAST = still to happen when drawn. Every story here happened, or was first reported, on Sunday 22 November 2026 (UTC). Outlets named beside each story.</p>
+    <p class="future">NOT YET (FUTURE): ATP Finals final, Turin: Zverev v Alcaraz, 17:00 GMT · Liverpool host Manchester United, 16:30 GMT.</p>
+  </footer>
+</main>
+</body>
+</html>
